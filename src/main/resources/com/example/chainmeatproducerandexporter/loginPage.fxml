@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="722.0" prefWidth="1409.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chainmeatproducerandexporter.loginPageController">
+<AnchorPane prefHeight="722.0" prefWidth="1409.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chainmeatproducerandexporter.commonFiles.loginPageController">
     <children>
         <Label alignment="TOP_CENTER" contentDisplay="TOP" layoutX="388.0" prefHeight="39.0" prefWidth="755.0" text="WELCOME TO CHAIN MEAT PRODUCER AND EXPORTER" textAlignment="CENTER" textFill="#150e9e">
             <font>

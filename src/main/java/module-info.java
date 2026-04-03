@@ -5,4 +5,7 @@ module com.example.chainmeatproducerandexporter {
 
     opens com.example.chainmeatproducerandexporter to javafx.fxml;
     exports com.example.chainmeatproducerandexporter;
+    exports com.example.chainmeatproducerandexporter.EbrahimSarwar;
+    opens com.example.chainmeatproducerandexporter.EbrahimSarwar to javafx.fxml;
+
 }

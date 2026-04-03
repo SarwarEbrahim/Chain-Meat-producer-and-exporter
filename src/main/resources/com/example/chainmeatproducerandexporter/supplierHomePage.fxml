@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="665.0" prefWidth="873.0" style="-fx-background-color: skyblue;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chainmeatproducerandexporter.EbrahimSarwar.supplierHomePageController">
+   <children>
+      <Label alignment="CENTER" layoutX="135.0" layoutY="59.0" prefHeight="18.0" prefWidth="130.0" style="-fx-background-color: gold; -fx-background-radius: 15;" text="personal information" />
+   </children>
+</AnchorPane>

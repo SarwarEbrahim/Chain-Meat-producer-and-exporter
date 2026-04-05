@@ -12,15 +12,15 @@
          <font>
             <Font size="13.0" />
          </font></Label>
-      <Label alignment="TOP_CENTER" layoutX="346.0" layoutY="40.0" prefHeight="115.0" prefWidth="334.0" style="-fx-background-color: skyblue;" textAlignment="CENTER" />
-      <VBox layoutX="-1.0" layoutY="31.0" prefHeight="450.0" prefWidth="242.0" style="-fx-background-color: lightgreen;">
+      <Label fx:id="personalInfoOutput" alignment="TOP_CENTER" layoutX="346.0" layoutY="40.0" prefHeight="115.0" prefWidth="334.0" style="-fx-background-color: skyblue;" textAlignment="CENTER" />
+      <VBox fx:id="vBox" layoutX="-1.0" layoutY="31.0" prefHeight="450.0" prefWidth="242.0" style="-fx-background-color: lightgreen;">
          <children>
-            <Button mnemonicParsing="false" prefHeight="27.0" prefWidth="357.0" style="-fx-background-color: lightgreen; -fx-border-color: black;" text="View meat types" textAlignment="CENTER">
+            <Button fx:id="ViewMeatTypesOnAction" mnemonicParsing="false" prefHeight="27.0" prefWidth="357.0" style="-fx-background-color: lightgreen; -fx-border-color: black;" text="View meat types" textAlignment="CENTER">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="27.0" prefWidth="319.0" style="-fx-background-color: lightgreen; -fx-border-color: black;" text="View unit price">
+            <Button fx:id="viewUnitPriceOnAction" mnemonicParsing="false" prefHeight="27.0" prefWidth="319.0" style="-fx-background-color: lightgreen; -fx-border-color: black;" text="View unit price">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
@@ -30,28 +30,28 @@
                   <Font name="System Bold" size="12.0" />
                </font>
             </Button>
-            <Button layoutX="10.0" layoutY="63.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="386.0" style="-fx-background-color: lightgreen; -fx-border-color: black;" text="View Approval Status">
+            <Button fx:id="viewApprovalStatusOnAction" layoutX="10.0" layoutY="63.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="386.0" style="-fx-background-color: lightgreen; -fx-border-color: black;" text="View Approval Status">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
             </Button>
-            <Button layoutX="10.0" layoutY="89.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="448.0" style="-fx-background-color: lightgreen; -fx-border-color: black;" text="Scheduled Delivery">
+            <Button fx:id="scheduledDeliveryOnAction" layoutX="10.0" layoutY="89.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="448.0" style="-fx-background-color: lightgreen; -fx-border-color: black;" text="Scheduled Delivery">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
             </Button>
-            <Button layoutX="10.0" layoutY="116.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="599.0" style="-fx-background-color: lightgreen; -fx-border-color: black;" text="Choose Payment Method">
+            <Button fx:id="choosePaymentMethodOnAction" layoutX="10.0" layoutY="116.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="599.0" style="-fx-background-color: lightgreen; -fx-border-color: black;" text="Choose Payment Method">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
             </Button>
-            <Button layoutX="10.0" layoutY="142.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="675.0" style="-fx-background-color: lightgreen; -fx-border-color: black;" text="View Payment Status">
+            <Button fx:id="viewPaymentStatusOnAction" layoutX="10.0" layoutY="142.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="675.0" style="-fx-background-color: lightgreen; -fx-border-color: black;" text="View Payment Status">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
             </Button>
          </children>
       </VBox>
-      <Button layoutY="-3.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="242.0" text="☰ Menu" />
+      <Button fx:id="menuOnAction" layoutY="-3.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="242.0" text="☰ Menu" />
    </children>
 </AnchorPane>

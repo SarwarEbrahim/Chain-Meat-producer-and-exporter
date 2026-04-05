@@ -1,9 +1,16 @@
 package com.example.chainmeatproducerandexporter.EbrahimSarwar;
 
 import javafx.event.ActionEvent;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.VBox;
+import javafx.stage.Stage;
+
+import java.io.IOException;
 
 public class supplierHomePageController
 {
@@ -28,13 +35,22 @@ public class supplierHomePageController
     }
 
     @javafx.fxml.FXML
-    public void ViewMeatTypesOnAction(ActionEvent actionEvent) {
+    public void ViewMeatTypesOnAction(ActionEvent actionEvent) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/com/example/chainmeatproducerandexporter/viewMeatTypes.fxml"));
+        Parent root = fxmlLoader.load();
+        Scene scene = new Scene(root);
+        Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
     }
 
     @javafx.fxml.FXML
     public void menuOnAction(ActionEvent actionEvent) {
-        vBox.setVisible(true);
+        vBox.setVisible(!vBox.isVisible());
+
+
     }
+
 
     @javafx.fxml.FXML
     public void viewUnitPriceOnAction(ActionEvent actionEvent) {

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="678.0" prefWidth="1007.0" style="-fx-background-color: green;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chainmeatproducerandexporter.EbrahimSarwar.ViewUnitPriceController">
+   <children>
+      <TableView fx:id="meatTypesTable" layoutX="149.0" layoutY="103.0" prefHeight="258.0" prefWidth="669.0" style="-fx-background-color: yellow; -fx-border-color: black;">
+         <columns>
+            <TableColumn fx:id="meatTypeColumn" prefWidth="502.3999969482422" text="Meat types" />
+            <TableColumn prefWidth="164.80001220703127" text="Unit price" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="710.0" prefWidth="957.0" style="-fx-background-color: maroon;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chainmeatproducerandexporter.EbrahimSarwar.ViewApprovedOrdersController">
+   <children>
+      <TableView layoutX="169.0" layoutY="79.0" prefHeight="219.0" prefWidth="579.0" style="-fx-background-color: lightgreen;">
+        <columns>
+          <TableColumn prefWidth="578.3999969482422" text="Approved orders" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

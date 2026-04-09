@@ -1,4 +1,4 @@
-package com.example.chainmeatproducerandexporter.ArshadAnjumAbir;
+package com.example.chainmeatproducerandexporter.ArshadAnjum;
 
 import javafx.event.ActionEvent;
 import javafx.scene.control.ComboBox;
@@ -37,5 +37,9 @@ public class InventoryReportController
 
     @javafx.fxml.FXML
     public void SaveToFileOnAction(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void GenerateReportButtonOnAction(ActionEvent actionEvent) {
     }
 }

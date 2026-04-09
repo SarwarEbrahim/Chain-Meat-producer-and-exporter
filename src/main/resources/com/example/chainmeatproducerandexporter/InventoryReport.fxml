@@ -22,7 +22,7 @@
       <DatePicker fx:id="TdateDP" layoutX="401.0" layoutY="45.0" />
       <ComboBox fx:id="comboReportType" layoutX="153.0" layoutY="84.0" prefWidth="150.0" />
       <Label layoutX="63.0" layoutY="88.0" text="Report Type:" />
-      <TableView fx:id="InventoryReportTV" layoutX="6.0" layoutY="128.0" prefHeight="200.0" prefWidth="593.0">
+      <TableView fx:id="InventoryReportTV" layoutX="6.0" layoutY="128.0" prefHeight="200.0" prefWidth="593.0" style="-fx-background-color: grey;">
         <columns>
           <TableColumn fx:id="BatchIDTC" prefWidth="130.39999103546143" text="Batch ID" />
           <TableColumn fx:id="MeatTypeTC" prefWidth="115.20001220703125" text="Meat Type " />

@@ -9,8 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CONTROLLER_NAME">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chainmeatproducerandexporter.ArshadAnjumAbir.InventoryReportController">
    <children>
       <Label layoutY="-2.0" prefHeight="31.0" prefWidth="600.0" style="-fx-background-color: yellow;" text="                                Inventory Report  ">
          <font>
@@ -18,21 +17,21 @@
          </font>
       </Label>
       <Label layoutX="68.0" layoutY="49.0" text="From Date:" />
-      <DatePicker layoutX="140.0" layoutY="45.0" />
+      <DatePicker fx:id="FdateDP" layoutX="140.0" layoutY="45.0" />
       <Label layoutX="329.0" layoutY="49.0" text="To Date:" />
-      <DatePicker layoutX="401.0" layoutY="45.0" />
-      <ComboBox layoutX="153.0" layoutY="84.0" prefWidth="150.0" />
+      <DatePicker fx:id="TdateDP" layoutX="401.0" layoutY="45.0" />
+      <ComboBox fx:id="comboReportType" layoutX="153.0" layoutY="84.0" prefWidth="150.0" />
       <Label layoutX="63.0" layoutY="88.0" text="Report Type:" />
-      <TableView layoutX="6.0" layoutY="128.0" prefHeight="200.0" prefWidth="593.0">
+      <TableView fx:id="InventoryReportTV" layoutX="6.0" layoutY="128.0" prefHeight="200.0" prefWidth="593.0">
         <columns>
-          <TableColumn prefWidth="130.39999103546143" text="Batch ID" />
-          <TableColumn prefWidth="115.20001220703125" text="Meat Type " />
-            <TableColumn prefWidth="122.39997863769531" text="Quantity" />
-            <TableColumn prefWidth="91.20001220703125" text="Status" />
-            <TableColumn prefWidth="133.60000000000002" text="Date" />
+          <TableColumn fx:id="BatchIDTC" prefWidth="130.39999103546143" text="Batch ID" />
+          <TableColumn fx:id="MeatTypeTC" prefWidth="115.20001220703125" text="Meat Type " />
+            <TableColumn fx:id="QuantityTC" prefWidth="122.39997863769531" text="Quantity" />
+            <TableColumn fx:id="StatusTC" prefWidth="91.20001220703125" text="Status" />
+            <TableColumn fx:id="DateTC" prefWidth="133.60000000000002" text="Date" />
         </columns>
       </TableView>
-      <Button layoutX="202.0" layoutY="349.0" mnemonicParsing="false" text="SaveToFile" />
-      <Button layoutX="325.0" layoutY="349.0" mnemonicParsing="false" text="Back" />
+      <Button layoutX="202.0" layoutY="349.0" mnemonicParsing="false" onAction="#SaveToFileOnAction" text="SaveToFile" />
+      <Button layoutX="325.0" layoutY="349.0" mnemonicParsing="false" onAction="#BackButtonOnAction" text="Back" />
    </children>
 </AnchorPane>

@@ -8,26 +8,31 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane fx:controller="com.example.chainmeatproducerandexporter.ArshadAnjumAbir.InspectionScreenController"
+            prefHeight="400.0" prefWidth="600.0"
+            style="-fx-background-color: grey;"
+            xmlns="http://javafx.com/javafx/25"
+            xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <Label prefHeight="47.0" prefWidth="600.0" style="-fx-background-color: yellow;" text="                                     Batch Inspection   ">
          <font>
             <Font size="21.0" />
          </font>
       </Label>
-      <Label layoutX="14.0" layoutY="47.0" prefHeight="18.0" prefWidth="230.0" style="-fx-background-color: white;" text="Batch ID:" />
-      <Label layoutX="13.0" layoutY="74.0" prefHeight="18.0" prefWidth="230.0" style="-fx-background-color: white;" text="Meat Type:" />
-      <Label layoutX="14.0" layoutY="100.0" prefHeight="18.0" prefWidth="230.0" style="-fx-background-color: white;" text="Quantity: " />
-      <Label layoutX="14.0" layoutY="128.0" prefHeight="18.0" prefWidth="230.0" style="-fx-background-color: white;" text="Production Date:" />
+      <Label fx:id="BatchIDLabel" layoutX="14.0" layoutY="47.0" prefHeight="18.0" prefWidth="230.0" style="-fx-background-color: white;" text="Batch ID:" />
+      <Label fx:id="MeatTypeLabel" layoutX="13.0" layoutY="74.0" prefHeight="18.0" prefWidth="230.0" style="-fx-background-color: white;" text="Meat Type:" />
+      <Label fx:id="QuantityLabel" layoutX="14.0" layoutY="100.0" prefHeight="18.0" prefWidth="230.0" style="-fx-background-color: white;" text="Quantity: " />
+      <Label fx:id="ProductionDateLabel" layoutX="14.0" layoutY="128.0" prefHeight="18.0" prefWidth="230.0" style="-fx-background-color: white;" text="Production Date:" />
       <Label layoutX="69.0" layoutY="163.0" prefHeight="18.0" prefWidth="108.0" text=" Temperature (°C):" />
-      <TextField layoutX="177.0" layoutY="160.0" />
+      <TextField fx:id="TemperatureTF" layoutX="177.0" layoutY="160.0" />
       <Label layoutX="75.0" layoutY="191.0" prefHeight="18.0" prefWidth="108.0" text="Hygiene Score:  " />
-      <TextField layoutX="177.0" layoutY="187.0" />
+      <TextField fx:id="HygieneScoreTF" layoutX="177.0" layoutY="187.0" />
       <Label layoutX="75.0" layoutY="220.0" prefHeight="18.0" prefWidth="108.0" text="Odor Condition: " />
-      <ComboBox layoutX="177.0" layoutY="217.0" prefWidth="150.0" />
+      <ComboBox fx:id="comboOdorCondition" layoutX="177.0" layoutY="217.0" prefWidth="150.0" />
       <Label layoutX="58.0" layoutY="261.0" prefHeight="18.0" prefWidth="108.0" text="         Remarks: " />
-      <TextArea layoutX="152.0" layoutY="252.0" prefHeight="18.0" prefWidth="412.0" />
-      <Button layoutX="140.0" layoutY="330.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="111.0" text="Review Inspection" />
-      <Button layoutX="319.0" layoutY="330.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="44.0" text="Back " />
+      <TextArea fx:id="RemarksTA" layoutX="152.0" layoutY="252.0" prefHeight="18.0" prefWidth="412.0" />
+      <Button layoutX="140.0" layoutY="330.0" mnemonicParsing="false" onAction="#ReviewInspectionButtonOnAction" prefHeight="38.0" prefWidth="111.0" text="Review Inspection" />
+      <Button layoutX="319.0" layoutY="330.0" mnemonicParsing="false" onAction="#BackButtonOnAction" prefHeight="38.0" prefWidth="44.0" text="Back " />
+      <Label layoutX="358.0" layoutY="56.0" prefHeight="18.0" prefWidth="230.0" style="-fx-background-color: yellow;" text="Guidelines:- Temp: 0–5°C- Hygiene: ≥7" />
    </children>
 </AnchorPane>

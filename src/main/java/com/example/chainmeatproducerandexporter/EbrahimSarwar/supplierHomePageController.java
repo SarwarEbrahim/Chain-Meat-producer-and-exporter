@@ -10,7 +10,10 @@ import javafx.scene.control.Label;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.Scanner;
 
 public class supplierHomePageController
 {
@@ -66,5 +69,7 @@ public class supplierHomePageController
 
     @javafx.fxml.FXML
     public void SelectedMeatTypesOnAction(ActionEvent actionEvent) {
+
+
     }
 }

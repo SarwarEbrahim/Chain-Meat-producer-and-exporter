@@ -5,9 +5,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chainmeatproducerandexporter.ArshadAnjum.InspectionSummaryController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chainmeatproducerandexporter.ArshadAnjum.InspectionSummaryController">
    <children>
-      <Label prefHeight="40.0" prefWidth="607.0" style="-fx-background-color: yellow;" text="                         Inspection summary">
+      <Label prefHeight="40.0" prefWidth="607.0" style="-fx-background-color: red;" text="                         Inspection summary">
          <font>
             <Font size="25.0" />
          </font>
@@ -21,6 +21,6 @@
       <Button layoutX="65.0" layoutY="251.0" mnemonicParsing="false" onAction="#ApproveBatchButtonOnAction" prefHeight="40.0" prefWidth="105.0" text="Approve Batch" />
       <Button layoutX="237.0" layoutY="251.0" mnemonicParsing="false" onAction="#RejectBatchButtonOnAction" prefHeight="40.0" prefWidth="86.0" text=" Reject Batch" />
       <Button layoutX="370.0" layoutY="251.0" mnemonicParsing="false" onAction="#ReInspectionButtonOnAction" prefHeight="40.0" prefWidth="134.0" text="Re-Inspection" />
-      <Button layoutX="252.0" layoutY="336.0" mnemonicParsing="false" onAction="#BackOnAction" text="Back" />
+      <Button layoutX="199.0" layoutY="330.0" mnemonicParsing="false" onAction="#ReturnToDashboardButtonOnAction" text="Return To Dashboard" />
    </children>
 </AnchorPane>

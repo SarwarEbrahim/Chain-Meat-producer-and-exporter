@@ -9,9 +9,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="427.0" prefWidth="615.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chainmeatproducerandexporter.ArshadAnjum.ApprovedBatchesController">
+<AnchorPane prefHeight="427.0" prefWidth="615.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chainmeatproducerandexporter.ArshadAnjum.ApprovedBatchesController">
    <children>
-      <Label layoutY="1.0" prefHeight="30.0" prefWidth="615.0" style="-fx-background-color: yellow;" text="                                         Approved Batches">
+      <Label layoutY="1.0" prefHeight="30.0" prefWidth="615.0" style="-fx-background-color: red;" text="                                         Approved Batches">
          <font>
             <Font size="20.0" />
          </font>
@@ -29,7 +29,7 @@
         </columns>
       </TableView>
       <Button layoutX="173.0" layoutY="361.0" mnemonicParsing="false" onAction="#AddtoInventoryButtonOnAction" prefHeight="30.0" prefWidth="106.0" text="Add to Inventory" />
-      <Button layoutX="360.0" layoutY="361.0" mnemonicParsing="false" onAction="#BackButtonOnAction" prefHeight="30.0" prefWidth="41.0" text="Back" />
+      <Button layoutX="360.0" layoutY="361.0" mnemonicParsing="false" onAction="#ReturnToDashboardButtonOnAction" prefHeight="30.0" prefWidth="160.0" text="Return To Dashboard" />
       <Label layoutX="202.0" layoutY="320.0" text="Add Location: " />
       <ComboBox fx:id="ComboLocation" layoutX="306.0" layoutY="316.0" prefWidth="150.0" />
    </children>

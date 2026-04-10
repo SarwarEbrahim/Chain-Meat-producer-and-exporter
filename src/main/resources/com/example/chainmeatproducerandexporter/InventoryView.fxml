@@ -8,9 +8,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chainmeatproducerandexporter.ArshadAnjum.InventoryViewController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chainmeatproducerandexporter.ArshadAnjum.InventoryViewController">
    <children>
-      <Label layoutX="-2.0" prefHeight="29.0" prefWidth="600.0" style="-fx-background-color: yellow;" text="                                Inventory Stock  ">
+      <Label layoutX="-2.0" prefHeight="29.0" prefWidth="600.0" style="-fx-background-color: red;" text="                                Inventory Stock  ">
          <font>
             <Font size="24.0" />
          </font>
@@ -29,6 +29,6 @@
       <Label layoutX="114.0" layoutY="332.0" text="New Quantity:" />
       <TextField fx:id="NewQuantityTF" layoutX="199.0" layoutY="328.0" />
       <Button layoutX="165.0" layoutY="361.0" mnemonicParsing="false" onAction="#UpdateQuantityButtonOnAction" text="Update Quantity" />
-      <Button layoutX="312.0" layoutY="361.0" mnemonicParsing="false" onAction="#BackButtonOnAction" text="Back" />
+      <Button layoutX="312.0" layoutY="361.0" mnemonicParsing="false" onAction="#ReturnToDashboardButtonOnAction" text="Return To Dashboard" />
    </children>
 </AnchorPane>

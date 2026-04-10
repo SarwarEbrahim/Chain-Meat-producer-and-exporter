@@ -1,10 +1,15 @@
 package com.example.chainmeatproducerandexporter.ArshadAnjum;
 
+import com.example.chainmeatproducerandexporter.HelloApplication;
 import javafx.event.ActionEvent;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Scene;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
+import javafx.stage.Stage;
 
 public class InspectionScreenController
 {
@@ -31,9 +36,34 @@ public class InspectionScreenController
 
     @javafx.fxml.FXML
     public void ReviewInspectionButtonOnAction(ActionEvent actionEvent) {
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Inspectionsummary.fxml"));
+            Scene nextScene = new Scene(fxmlLoader.load());
+            Stage nextStage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+            nextStage.setTitle("Inspection Summary");
+            nextStage.setScene(nextScene);
+            nextStage.show();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Deprecated
+    public void BackButtonOnAction(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
-    public void BackButtonOnAction(ActionEvent actionEvent) {
+    public void ReturnToDashboardButtonOnAction(ActionEvent actionEvent) {
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("QualityInspectorDashboard.fxml"));
+            Scene nextScene = new Scene(fxmlLoader.load());
+            Stage nextStage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+            nextStage.setTitle("QualityInspectorDashboard.fxml");
+            nextStage.setScene(nextScene);
+            nextStage.show();
+        } catch (Exception e) {
+            e.printStackTrace();
+
+        }
     }
 }

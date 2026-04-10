@@ -8,13 +8,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:controller="com.example.chainmeatproducerandexporter.ArshadAnjum.InspectionScreenController"
-            prefHeight="400.0" prefWidth="600.0"
-            style="-fx-background-color: grey;"
-            xmlns="http://javafx.com/javafx/25"
-            xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chainmeatproducerandexporter.ArshadAnjum.InspectionScreenController">
    <children>
-      <Label prefHeight="47.0" prefWidth="600.0" style="-fx-background-color: yellow;" text="                                     Batch Inspection   ">
+      <Label prefHeight="47.0" prefWidth="600.0" style="-fx-background-color: red;" text="                                     Batch Inspection   ">
          <font>
             <Font size="21.0" />
          </font>
@@ -32,7 +28,7 @@
       <Label layoutX="58.0" layoutY="261.0" prefHeight="18.0" prefWidth="108.0" text="         Remarks: " />
       <TextArea fx:id="RemarksTA" layoutX="152.0" layoutY="252.0" prefHeight="18.0" prefWidth="412.0" />
       <Button layoutX="140.0" layoutY="330.0" mnemonicParsing="false" onAction="#ReviewInspectionButtonOnAction" prefHeight="38.0" prefWidth="111.0" text="Review Inspection" />
-      <Button layoutX="319.0" layoutY="330.0" mnemonicParsing="false" onAction="#BackButtonOnAction" prefHeight="38.0" prefWidth="44.0" text="Back " />
+      <Button layoutX="319.0" layoutY="330.0" mnemonicParsing="false" onAction="#ReturnToDashboardButtonOnAction" prefHeight="38.0" prefWidth="160.0" text="ReturnToDashboard" />
       <Label layoutX="358.0" layoutY="56.0" prefHeight="18.0" prefWidth="230.0" style="-fx-background-color: yellow;" text="Guidelines:- Temp: 0–5°C- Hygiene: ≥7" />
    </children>
 </AnchorPane>

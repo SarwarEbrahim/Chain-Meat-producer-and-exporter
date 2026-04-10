@@ -1,7 +1,12 @@
 package com.example.chainmeatproducerandexporter.ArshadAnjum;
 
+import com.example.chainmeatproducerandexporter.HelloApplication;
 import javafx.event.ActionEvent;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Scene;
 import javafx.scene.control.Label;
+import javafx.stage.Stage;
 
 public class InspectionSummaryController
 {
@@ -30,11 +35,26 @@ public class InspectionSummaryController
     public void RejectBatchButtonOnAction(ActionEvent actionEvent) {
     }
 
-    @javafx.fxml.FXML
+    @Deprecated
     public void BackOnAction(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
     public void ReInspectionButtonOnAction(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void ReturnToDashboardButtonOnAction(ActionEvent actionEvent) {
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("QualityInspectorDashboard.fxml"));
+            Scene nextScene = new Scene(fxmlLoader.load());
+            Stage nextStage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+            nextStage.setTitle("QualityInspectorDashboard.fxml");
+            nextStage.setScene(nextScene);
+            nextStage.show();
+        } catch (Exception e) {
+            e.printStackTrace();
+
+        }
     }
 }

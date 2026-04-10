@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="582.0" prefWidth="735.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chainmeatproducerandexporter.ArshadAnjum.QualityInspectorDashboardController">
+<BorderPane fx:id="DashboardBorderpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="582.0" prefWidth="735.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chainmeatproducerandexporter.ArshadAnjum.QualityInspectorDashboardController">
    <top>
       <Label prefHeight="43.0" prefWidth="756.0" style="-fx-background-color: yellow;" text="                                           Quality Inspector Dashboard" textAlignment="RIGHT" BorderPane.alignment="CENTER">
          <font>
@@ -17,7 +17,7 @@
       </Label>
    </top>
    <left>
-      <VBox prefHeight="381.0" prefWidth="130.0" style="-fx-background-color: ash;" BorderPane.alignment="CENTER">
+      <VBox prefHeight="381.0" prefWidth="130.0" style="-fx-background-color: red;" BorderPane.alignment="CENTER">
          <children>
             <Button mnemonicParsing="false" onAction="#PendingBatchesOnActionButton" prefHeight="42.0" prefWidth="122.0" text="Pending Batches">
                <VBox.margin>
@@ -42,7 +42,7 @@
          </children>
       </VBox>
    </left>
-   <right>
+   <center>
       <AnchorPane prefHeight="539.0" prefWidth="610.0" style="-fx-background-color: grey;" BorderPane.alignment="CENTER" />
-   </right>
+   </center>
 </BorderPane>

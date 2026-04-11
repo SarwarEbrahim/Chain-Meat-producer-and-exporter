@@ -11,9 +11,9 @@
 
 <AnchorPane prefHeight="703.0" prefWidth="1138.0" style="-fx-background-color: green;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chainmeatproducerandexporter.EbrahimSarwar.SelectedMeatTypesController">
    <children>
-      <TableView layoutX="218.0" layoutY="73.0" prefHeight="243.0" prefWidth="467.0" style="-fx-background-color: lightblue;">
+      <TableView fx:id="selectedMeatTable" layoutX="218.0" layoutY="73.0" prefHeight="243.0" prefWidth="467.0" style="-fx-background-color: lightblue;">
         <columns>
-          <TableColumn prefWidth="466.4000274658203" text="Selected meat types" />
+          <TableColumn fx:id="selectedMeatColumn" prefWidth="466.4000274658203" text="Selected meat types" />
         </columns>
       </TableView>
       <VBox layoutX="685.0" layoutY="73.0" prefHeight="243.0" prefWidth="100.0" style="-fx-background-color: lightblue;">
@@ -25,24 +25,24 @@
             </Label>
             <HBox prefHeight="26.0" prefWidth="110.0">
                <children>
-                  <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="62.0" text="+">
+                  <Button fx:id="increaseQuantity" mnemonicParsing="false" prefHeight="26.0" prefWidth="62.0" text="+">
                      <font>
                         <Font name="System Bold" size="16.0" />
                      </font>
                   </Button>
-                  <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="62.0" text="-">
+                  <Button fx:id="decreaseQuantity" mnemonicParsing="false" prefHeight="26.0" prefWidth="62.0" text="-">
                      <font>
                         <Font name="System Bold" size="16.0" />
                      </font>
                   </Button>
                </children>
             </HBox>
-            <Label alignment="BASELINE_RIGHT" contentDisplay="RIGHT" layoutX="10.0" layoutY="10.0" prefHeight="28.0" prefWidth="100.0" text="kg" textAlignment="RIGHT">
+            <Label fx:id="kgLabel" alignment="BASELINE_RIGHT" contentDisplay="RIGHT" layoutX="10.0" layoutY="10.0" prefHeight="28.0" prefWidth="100.0" text="kg" textAlignment="RIGHT">
                <font>
                   <Font size="18.0" />
                </font>
             </Label>
-            <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="102.0" text="Confirm">
+            <Button fx:id="confirmOnAction" mnemonicParsing="false" prefHeight="26.0" prefWidth="102.0" text="Confirm">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
@@ -52,5 +52,6 @@
       </VBox>
       <Label layoutX="274.0" layoutY="352.0" prefHeight="127.0" prefWidth="350.0" text="Label" />
       <Button layoutX="73.0" layoutY="38.0" mnemonicParsing="false" onAction="#BackHomeOnAction" prefHeight="43.0" prefWidth="126.0" text="Back to Home Page" />
+      <Button layoutX="574.0" layoutY="29.0" mnemonicParsing="false" onAction="#loadMeatListOnAction" prefHeight="43.0" prefWidth="210.0" text="Load selected meat types" />
    </children>
 </AnchorPane>

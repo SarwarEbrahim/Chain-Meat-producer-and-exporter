@@ -8,6 +8,8 @@ import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
 
+import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 
 public class viewMeatTypesController
@@ -26,11 +28,21 @@ public class viewMeatTypesController
     }
 
     @javafx.fxml.FXML
-    public void selectButton1(ActionEvent actionEvent) {
+    public void selectButton1(ActionEvent actionEvent) throws IOException {
+        File f = new File("meatTypes.txt");
+        FileWriter fw = new FileWriter(f, true);
+        fw.write("Chiken \n");
+        fw.close();
+
+
     }
 
     @javafx.fxml.FXML
-    public void selectButton3(ActionEvent actionEvent) {
+    public void selectButton3(ActionEvent actionEvent) throws IOException {
+        File f = new File("meatTypes.txt");
+        FileWriter fw = new FileWriter(f, true);
+        fw.write("Mutton \n");
+        fw.close();
 
     }
 
@@ -40,7 +52,11 @@ public class viewMeatTypesController
     }
 
     @javafx.fxml.FXML
-    public void selectButton2(ActionEvent actionEvent) {
+    public void selectButton2(ActionEvent actionEvent) throws IOException {
+        File f = new File("meatTypes.txt");
+        FileWriter fw = new FileWriter(f, true);
+        fw.write("Beef \n");
+        fw.close();
     }
 
     @javafx.fxml.FXML
@@ -49,11 +65,19 @@ public class viewMeatTypesController
     }
 
     @javafx.fxml.FXML
-    public void selectButton5(ActionEvent actionEvent) {
+    public void selectButton5(ActionEvent actionEvent) throws IOException {
+        File f = new File("meatTypes.txt");
+        FileWriter fw = new FileWriter(f, true);
+        fw.write("Camel \n");
+        fw.close();
     }
 
     @javafx.fxml.FXML
-    public void selectButton4(ActionEvent actionEvent) {
+    public void selectButton4(ActionEvent actionEvent) throws IOException {
+        File f = new File("meatTypes.txt");
+        FileWriter fw = new FileWriter(f, true);
+        fw.write("Duck \n");
+        fw.close();
     }
 
     @javafx.fxml.FXML
@@ -62,7 +86,11 @@ public class viewMeatTypesController
     }
 
     @javafx.fxml.FXML
-    public void selectButton6(ActionEvent actionEvent) {
+    public void selectButton6(ActionEvent actionEvent) throws IOException {
+        File f = new File("meatTypes.txt");
+        FileWriter fw = new FileWriter(f, true);
+        fw.write("buffalo \n");
+        fw.close();
     }
 
     @javafx.fxml.FXML

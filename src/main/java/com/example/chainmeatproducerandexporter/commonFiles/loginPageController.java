@@ -70,7 +70,29 @@ public class loginPageController
             } else {
                 messageLabel.setText("Invalid Inventory Manager ID or Password.");
             }
+        }//
+        if (selectedRole.equals("Supplier")) {
+            if (userId.equals(SupplierUser.getUserId()) &&
+                    password.equals(SupplierUser.getPassword())) {
+
+                messageLabel.setText("Login successful.");
+                openScene(actionEvent, "SupplierHomePage.fxml", "Supplier Home Page");
+            } else {
+                messageLabel.setText("Invalid Supplier ID or Password.");
+            }
         }
+
+        else if (selectedRole.equals("Export delivery coordinator")) {
+            if (userId.equals(ExportDeliveryCoordinator.getUserId()) &&
+                    password.equals(ExportDeliveryCoordinator.getPassword())) {
+
+                messageLabel.setText("Login successful.");
+                openScene(actionEvent, "exportDeliveryCoordinatorHomePage.fxml", "Export delivery coordinator Home Page");
+            } else {
+                messageLabel.setText("Invalid Export delivery coordinator ID or Password.");
+            }
+        }//
+
     }
 
     private void openScene(ActionEvent actionEvent, String fxmlFile, String title) {

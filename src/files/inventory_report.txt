@@ -1,0 +1,2 @@
+Batch ID,Meat Type,Quantity,Expiry Date,Status
+B004,Beef,50,2026-04-08,Expired

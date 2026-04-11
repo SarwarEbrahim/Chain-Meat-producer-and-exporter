@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chainmeatproducerandexporter.ArshadAnjum.InspectionHistoryController">
+   <children>
+      <Label layoutX="1.0" layoutY="1.0" prefHeight="39.0" prefWidth="600.0" style="-fx-background-color: red;" text="                            Inspection History     ">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="42.0" layoutY="48.0" text="Batch ID:" />
+      <TextField fx:id="BatchIDTF" layoutX="101.0" layoutY="44.0" prefHeight="26.0" prefWidth="69.0" />
+      <Label layoutX="194.0" layoutY="49.0" text="Date:" />
+      <DatePicker fx:id="DateDP" layoutX="238.0" layoutY="45.0" prefHeight="26.0" prefWidth="120.0" />
+      <Label layoutX="396.0" layoutY="50.0" text="Status:" />
+      <ComboBox fx:id="Combostatus" layoutX="437.0" layoutY="46.0" prefWidth="150.0" />
+      <Button layoutX="244.0" layoutY="94.0" mnemonicParsing="false" onAction="#ApplyFilterButtonOnAction" text="Apply Filter" />
+      <TableView fx:id="InspectionHistoryTV" layoutY="131.0" prefHeight="200.0" prefWidth="602.0" style="-fx-background-color: grey;">
+        <columns>
+          <TableColumn fx:id="BatchIDTc" prefWidth="128.80005502700806" text="Batch ID" />
+          <TableColumn fx:id="TempTc" prefWidth="118.39996337890625" text="Temp" />
+            <TableColumn fx:id="HygieneTc" minWidth="3.99993896484375" prefWidth="99.199951171875" text="Hygiene" />
+            <TableColumn fx:id="odorTc" minWidth="8.79998779296875" prefWidth="83.199951171875" text=" Odor " />
+            <TableColumn fx:id="StatusTc" prefWidth="75.20001220703125" text="Status" />
+            <TableColumn fx:id="DateTc" prefWidth="92.79995727539062" text="Date  " />
+        </columns>
+      </TableView>
+      <Button layoutX="214.0" layoutY="347.0" mnemonicParsing="false" onAction="#ReturnToDashboardButtonOnAction" prefHeight="26.0" prefWidth="136.0" text="Return To Dashboard" />
+   </children>
+</AnchorPane>

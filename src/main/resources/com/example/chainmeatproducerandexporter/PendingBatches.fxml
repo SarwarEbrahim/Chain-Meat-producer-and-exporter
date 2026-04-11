@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chainmeatproducerandexporter.ArshadAnjum.PendingBatchesController">
+   <children>
+      <Label layoutY="-4.0" prefHeight="40.0" prefWidth="600.0" style="-fx-background-color: red;" text="                              Pending Batches">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="SearchBatchIDTF" layoutX="180.0" layoutY="49.0" />
+      <Label layoutX="79.0" layoutY="53.0" text="Search Batch ID:" />
+      <Button layoutX="418.0" layoutY="49.0" mnemonicParsing="false" onAction="#SearchButtonOnAction" text="Search" />
+      <TableView fx:id="PendingBatchesTV" layoutY="100.0" prefHeight="200.0" prefWidth="600.0" style="-fx-background-color: grey;">
+        <columns>
+          <TableColumn fx:id="BatchIDTC" prefWidth="145.60003662109375" text="Batch ID" />
+          <TableColumn fx:id="MeatTypeTC" prefWidth="150.39996337890625" text="Meat Type" />
+            <TableColumn fx:id="QuantityTC" prefWidth="156.79998779296875" text="Quantity" />
+            <TableColumn fx:id="ProdDateTF" prefWidth="148.79998779296875" text="Production Date  " />
+        </columns>
+      </TableView>
+      <Button layoutX="150.0" layoutY="336.0" mnemonicParsing="false" onAction="#InspectButtonOnAction" prefHeight="26.0" prefWidth="96.0" text="Inspect Batch" />
+      <Button layoutX="366.0" layoutY="337.0" mnemonicParsing="false" onAction="#ReturnToDashboardButtonOnAction" text="Return To Dashboard" />
+   </children>
+</AnchorPane>

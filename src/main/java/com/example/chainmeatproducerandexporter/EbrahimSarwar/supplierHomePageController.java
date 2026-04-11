@@ -65,6 +65,12 @@ public class supplierHomePageController
     }
 
     @javafx.fxml.FXML
-    public void SelectedMeatTypesOnAction(ActionEvent actionEvent) {
+    public void SelectedMeatTypesOnAction(ActionEvent actionEvent) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/com/example/chainmeatproducerandexporter/selectedMeatTypes.fxml"));
+        Parent root = fxmlLoader.load();
+        Scene scene = new Scene(root);
+        Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
     }
 }

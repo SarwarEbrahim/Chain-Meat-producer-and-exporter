@@ -1,0 +1,2 @@
+B009,Beef,30,2026-04-01,2026-04-05,Strong odor detected
+B010,Chicken,50,2026-04-02,2026-04-06,Unacceptable hygiene score

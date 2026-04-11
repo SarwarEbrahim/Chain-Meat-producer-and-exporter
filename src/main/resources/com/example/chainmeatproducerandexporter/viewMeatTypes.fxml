@@ -1,39 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.TableColumn?>
-<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane prefHeight="665.0" prefWidth="888.0" style="-fx-background-color: green;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chainmeatproducerandexporter.EbrahimSarwar.viewMeatTypesController">
+<AnchorPane prefHeight="665.0" prefWidth="927.0" style="-fx-background-color: green;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chainmeatproducerandexporter.EbrahimSarwar.viewMeatTypesController">
    <children>
-      <TableView fx:id="meatTypesTable" layoutX="41.0" layoutY="96.0" prefHeight="258.0" prefWidth="778.0" style="-fx-background-color: yellow; -fx-border-color: black;">
-        <columns>
-          <TableColumn fx:id="meatTypeColumn" prefWidth="502.3999969482422" text="Meat types" />
-        </columns>
-      </TableView>
-      <VBox layoutX="531.0" layoutY="123.0" prefHeight="230.0" prefWidth="144.0">
+      <VBox layoutX="227.0" layoutY="120.0" prefHeight="195.0" prefWidth="138.0" style="-fx-background-color: lightgreen;">
          <children>
-            <Button mnemonicParsing="false" prefHeight="39.0" prefWidth="144.0" style="-fx-background-color: gold; -fx-border-color: black;" text="View Quantity Needed" textFill="#1a174e" />
-            <Button mnemonicParsing="false" prefHeight="34.0" prefWidth="144.0" style="-fx-background-color: gold; -fx-border-color: black;" text="View Quantity Needed" textFill="#1a174e" />
-            <Button mnemonicParsing="false" prefHeight="34.0" prefWidth="144.0" style="-fx-background-color: gold; -fx-border-color: black;" text="View Quantity Needed" textFill="#1a174e" />
-            <Button layoutX="10.0" layoutY="79.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="144.0" style="-fx-background-color: gold; -fx-border-color: black;" text="View Quantity Needed" textFill="#1a174e" />
-            <Button layoutX="10.0" layoutY="113.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="144.0" style="-fx-background-color: gold; -fx-border-color: black;" text="View Quantity Needed" textFill="#1a174e" />
-            <Button layoutX="10.0" layoutY="148.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="144.0" style="-fx-background-color: gold; -fx-border-color: black;" text="View Quantity Needed" textFill="#1a174e" />
-            <Button layoutX="10.0" layoutY="182.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="144.0" style="-fx-background-color: gold; -fx-border-color: black;" text="View Quantity Needed" textFill="#1a174e" />
+            <Label alignment="CENTER" prefHeight="28.0" prefWidth="138.0" text="Meat types" textAlignment="CENTER" />
+            <Label alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="28.0" prefWidth="138.0" style="-fx-border-color: black;" text="Chiken" textAlignment="CENTER" />
+            <Label alignment="CENTER" layoutX="10.0" layoutY="38.0" prefHeight="28.0" prefWidth="138.0" style="-fx-border-color: black;" text="Beef" textAlignment="CENTER" />
+            <Label alignment="CENTER" layoutX="10.0" layoutY="66.0" prefHeight="28.0" prefWidth="138.0" style="-fx-border-color: black;" text="Mutton" textAlignment="CENTER" />
+            <Label alignment="CENTER" layoutX="10.0" layoutY="94.0" prefHeight="28.0" prefWidth="138.0" style="-fx-border-color: black;" text="Duck" textAlignment="CENTER" />
+            <Label alignment="CENTER" layoutX="10.0" layoutY="122.0" prefHeight="28.0" prefWidth="138.0" style="-fx-border-color: black;" text="Camel" textAlignment="CENTER" />
+            <Label alignment="CENTER" layoutX="10.0" layoutY="150.0" prefHeight="28.0" prefWidth="138.0" style="-fx-border-color: black;" text="buffalo" textAlignment="CENTER" />
          </children>
       </VBox>
-      <VBox layoutX="675.0" layoutY="123.0" prefHeight="230.0" prefWidth="144.0">
+      <VBox layoutX="365.0" layoutY="120.0" prefHeight="195.0" prefWidth="138.0" style="-fx-background-color: lightgreen;">
          <children>
-            <Button mnemonicParsing="false" prefHeight="39.0" prefWidth="144.0" style="-fx-background-color: gold; -fx-border-color: black;" text="Select" textFill="#1a174e" />
-            <Button mnemonicParsing="false" prefHeight="34.0" prefWidth="144.0" style="-fx-background-color: gold; -fx-border-color: black;" text="Select" textFill="#1a174e" />
-            <Button mnemonicParsing="false" prefHeight="34.0" prefWidth="144.0" style="-fx-background-color: gold; -fx-border-color: black;" text="Select" textFill="#1a174e" />
-            <Button layoutX="10.0" layoutY="79.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="144.0" style="-fx-background-color: gold; -fx-border-color: black;" text="Select" textFill="#1a174e" />
-            <Button layoutX="10.0" layoutY="113.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="144.0" style="-fx-background-color: gold; -fx-border-color: black;" text="Select" textFill="#1a174e" />
-            <Button layoutX="10.0" layoutY="148.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="144.0" style="-fx-background-color: gold; -fx-border-color: black;" text="Select" textFill="#1a174e" />
-            <Button layoutX="10.0" layoutY="182.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="144.0" style="-fx-background-color: gold; -fx-border-color: black;" text="Select" textFill="#1a174e" />
+            <Label alignment="CENTER" prefHeight="28.0" prefWidth="138.0" text="quantity need" textAlignment="CENTER" />
+            <Button mnemonicParsing="false" onAction="#quantityButton1" prefHeight="28.0" prefWidth="138.0" style="-fx-border-color: black; -fx-background-color: gold;" text="View quantity needed" />
+            <Button layoutX="10.0" layoutY="38.0" mnemonicParsing="false" onAction="#quantityButton2" prefHeight="25.0" prefWidth="138.0" style="-fx-border-color: black; -fx-background-color: gold;" text="View quantity needed" />
+            <Button layoutX="10.0" layoutY="65.0" mnemonicParsing="false" onAction="#quantityButton3" prefHeight="25.0" prefWidth="138.0" style="-fx-border-color: black; -fx-background-color: gold;" text="View quantity needed" />
+            <Button layoutX="10.0" layoutY="92.0" mnemonicParsing="false" onAction="#quantityButton4" prefHeight="25.0" prefWidth="138.0" style="-fx-border-color: black; -fx-background-color: gold;" text="View quantity needed" />
+            <Button layoutX="10.0" layoutY="120.0" mnemonicParsing="false" onAction="#quantityButton5" prefHeight="25.0" prefWidth="138.0" style="-fx-border-color: black; -fx-background-color: gold;" text="View quantity needed" />
+            <Button layoutX="10.0" layoutY="147.0" mnemonicParsing="false" onAction="#quantityButton6" prefHeight="0.0" prefWidth="138.0" style="-fx-border-color: black; -fx-background-color: gold;" text="View quantity needed" />
          </children>
       </VBox>
+      <VBox layoutX="503.0" layoutY="120.0" prefHeight="195.0" prefWidth="138.0" style="-fx-background-color: lightgreen;">
+         <children>
+            <Label alignment="CENTER" prefHeight="28.0" prefWidth="138.0" text="Confirm " textAlignment="CENTER" />
+            <Button mnemonicParsing="false" onAction="#selectButton1" prefHeight="30.0" prefWidth="138.0" style="-fx-border-color: black; -fx-background-color: gold;" text="Select" />
+            <Button layoutX="10.0" layoutY="38.0" mnemonicParsing="false" onAction="#selectButton2" prefHeight="30.0" prefWidth="138.0" style="-fx-border-color: black; -fx-background-color: gold;" text="Select" />
+            <Button layoutX="10.0" layoutY="68.0" mnemonicParsing="false" onAction="#selectButton3" prefHeight="30.0" prefWidth="138.0" style="-fx-border-color: black; -fx-background-color: gold;" text="Select" />
+            <Button layoutX="10.0" layoutY="99.0" mnemonicParsing="false" onAction="#selectButton4" prefHeight="30.0" prefWidth="138.0" style="-fx-border-color: black; -fx-background-color: gold;" text="Select" />
+            <Button layoutX="10.0" layoutY="129.0" mnemonicParsing="false" onAction="#selectButton5" prefHeight="30.0" prefWidth="138.0" style="-fx-border-color: black; -fx-background-color: gold;" text="Select" />
+            <Button layoutX="10.0" layoutY="160.0" mnemonicParsing="false" onAction="#selectButton6" prefHeight="30.0" prefWidth="138.0" style="-fx-border-color: black; -fx-background-color: gold;" text="Select" />
+         </children>
+      </VBox>
+      <Label fx:id="quantityOutput" alignment="CENTER" layoutX="365.0" layoutY="318.0" prefHeight="29.0" prefWidth="138.0" style="-fx-background-color: skyblue;" />
+      <Button layoutX="61.0" layoutY="45.0" mnemonicParsing="false" onAction="#BackHomeOnAction" prefHeight="43.0" prefWidth="126.0" text="Back to Home Page" />
    </children>
 </AnchorPane>

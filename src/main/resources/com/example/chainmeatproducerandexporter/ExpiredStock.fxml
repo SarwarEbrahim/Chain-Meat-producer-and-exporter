@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chainmeatproducerandexporter.ArshadAnjum.ExpiredStockController">
+   <children>
+      <Label prefHeight="28.0" prefWidth="600.0" style="-fx-background-color: red;" text="                              Expired / Near Expiry">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="65.0" layoutY="50.0" prefHeight="27.0" prefWidth="63.0" text="Filter:" />
+      <Button layoutX="369.0" layoutY="51.0" mnemonicParsing="false" onAction="#ApplyButtonOnAction" text="Apply" />
+      <TableView fx:id="ExpiredExpiryTV" layoutY="108.0" prefHeight="200.0" prefWidth="600.0" style="-fx-background-color: grey;">
+        <columns>
+          <TableColumn fx:id="expirybatchidTc" prefWidth="121.60003662109375" text="Batch ID " />
+          <TableColumn fx:id="MeatTypeTc" minWidth="4.79998779296875" prefWidth="127.20001220703125" text="Meat Type" />
+            <TableColumn fx:id="QuantityTc" minWidth="0.0" prefWidth="112.0" text="Quantity" />
+            <TableColumn fx:id="ExpiryDateTc" minWidth="0.0" prefWidth="127.20001220703125" text="Expiry Date" />
+            <TableColumn fx:id="estatusTc" minWidth="0.0" prefWidth="112.00006103515625" text="Status " />
+        </columns>
+      </TableView>
+      <Button layoutX="97.0" layoutY="336.0" mnemonicParsing="false" onAction="#RemoveBatchButtonOnAction" text="Remove Batch " />
+      <Button layoutX="300.0" layoutY="336.0" mnemonicParsing="false" onAction="#ReturnToDashboardButtonOnAction" prefHeight="26.0" prefWidth="243.0" text="Return To Dashboard" />
+      <ComboBox fx:id="comboFilter" layoutX="105.0" layoutY="51.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>

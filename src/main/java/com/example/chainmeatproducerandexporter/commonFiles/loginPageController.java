@@ -71,7 +71,7 @@ public class loginPageController
                 messageLabel.setText("Invalid Inventory Manager ID or Password.");
             }
         }//
-        if (selectedRole.equals("Supplier")) {
+        else if (selectedRole.equals("Supplier")) {
             if (userId.equals(SupplierUser.getUserId()) &&
                     password.equals(SupplierUser.getPassword())) {
 

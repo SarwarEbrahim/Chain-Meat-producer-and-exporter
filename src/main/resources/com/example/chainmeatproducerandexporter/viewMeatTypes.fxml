@@ -41,5 +41,6 @@
          </children>
       </VBox>
       <Label fx:id="quantityOutput" alignment="CENTER" layoutX="365.0" layoutY="318.0" prefHeight="29.0" prefWidth="138.0" style="-fx-background-color: skyblue;" />
+      <Button layoutX="65.0" layoutY="31.0" mnemonicParsing="false" onAction="#backHomeOnAction" prefHeight="44.0" prefWidth="120.0" text="Back to home " />
    </children>
 </AnchorPane>

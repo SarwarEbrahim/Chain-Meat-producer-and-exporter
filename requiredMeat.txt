@@ -2,3 +2,5 @@ Chiken
 Chiken 
 Beef 
 Duck 
+Camel 
+Mutton 

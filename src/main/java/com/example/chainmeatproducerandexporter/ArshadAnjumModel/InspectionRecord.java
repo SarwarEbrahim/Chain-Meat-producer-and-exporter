@@ -30,6 +30,15 @@ public class InspectionRecord {
         this.inspectionResult = inspectionResult;
     }
 
+    public InspectionRecord(String batchId, String temperature, String hygieneScore, String odorCondition, String inspectionResult, LocalDate inspectionDate) {
+        this.batchId = batchId;
+        this.temperature = Double.parseDouble(temperature);
+        this.hygieneScore = Integer.parseInt(hygieneScore);
+        this.odorCondition = odorCondition;
+        this.inspectionResult = inspectionResult;
+        this.inspectionDate = inspectionDate ;
+    }
+
     public String getRecordId() {
         return recordId;
     }

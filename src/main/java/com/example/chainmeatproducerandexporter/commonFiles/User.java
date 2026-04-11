@@ -58,8 +58,16 @@ public class User {
         this.role = role;
     }
 
+    public void createAccount() {
+        System.out.println("Account created for " + name);
+    }
+
     public boolean login(String email, String password) {
         return this.email.equals(email) && this.password.equals(password);
+    }
+
+    public void forgotPassword() {
+        System.out.println("Password recovery initiated for " + email);
     }
 
     public void logout() {

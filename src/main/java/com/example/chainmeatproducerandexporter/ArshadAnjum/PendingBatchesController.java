@@ -47,7 +47,6 @@ public class PendingBatchesController {
         loadPendingBatches();
     }
 
-    // ✅ SAFE FILE READING (ONLY FileReader)
     private void loadPendingBatches() {
         pendingBatchList.clear();
 
@@ -88,7 +87,6 @@ public class PendingBatchesController {
                         pendingBatchList.add(batch);
 
                     } catch (Exception e) {
-                        // 🔥 SAFE FIX: skip bad line instead of crashing
                         System.out.println("Skipping bad data line: " + line);
                     }
                 }

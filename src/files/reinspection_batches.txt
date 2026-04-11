@@ -1,1 +1,2 @@
-B006,Mutton,70,2026-04-02,2026-04-11,Temperature borderline
+B011,Mutton,45,2026-04-03,2026-04-09,Minor odor issue
+B012,Beef,55,2026-04-04,2026-04-10,Temperature slightly high

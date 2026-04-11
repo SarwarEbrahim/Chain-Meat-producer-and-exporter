@@ -58,7 +58,6 @@ public class InspectionSummaryController {
         removeFromPendingFile(selectedBatch.getBatchId());
 
         showAlert("Success", "Batch approved successfully.");
-
         goToDashboard(actionEvent);
     }
 
@@ -81,7 +80,6 @@ public class InspectionSummaryController {
         removeFromPendingFile(selectedBatch.getBatchId());
 
         showAlert("Success", "Batch rejected successfully.");
-
         goToDashboard(actionEvent);
     }
 
@@ -122,7 +120,6 @@ public class InspectionSummaryController {
         removeFromPendingFile(selectedBatch.getBatchId());
 
         showAlert("Success", "Batch marked for re-inspection.");
-
         goToDashboard(actionEvent);
     }
 
@@ -147,8 +144,12 @@ public class InspectionSummaryController {
     }
 
     private void saveInspectionRecord(String result) {
-        String record = selectedBatch.getBatchId() + "," +
-                selectedBatch.getMeatType() + "," +
+        String recordId = "IR" + System.currentTimeMillis();
+
+        String record = recordId + "," +
+                selectedBatch.getBatchId() + "," +
+                "QI01" + "," +
+                java.time.LocalDate.now() + "," +
                 temperature + "," +
                 hygieneScore + "," +
                 odorCondition + "," +
@@ -160,9 +161,33 @@ public class InspectionSummaryController {
 
     private void writeToFile(String filePath, String data) {
         try {
-            FileWriter fw = new FileWriter(filePath, true);
-            fw.write(data + "\n");
+            StringBuilder oldContent = new StringBuilder();
+
+            try {
+                FileReader fr = new FileReader(filePath);
+                int ch;
+                while ((ch = fr.read()) != -1) {
+                    oldContent.append((char) ch);
+                }
+                fr.close();
+            } catch (IOException e) {
+                // file may not exist yet
+            }
+
+            FileWriter fw = new FileWriter(filePath);
+
+            if (!oldContent.toString().isEmpty()) {
+                fw.write(oldContent.toString());
+
+                if (!oldContent.toString().endsWith("\n")) {
+                    fw.write("\n");
+                }
+            }
+
+            fw.write(data);
+            fw.write("\n");
             fw.close();
+
         } catch (IOException e) {
             e.printStackTrace();
         }

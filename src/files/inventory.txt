@@ -1,1 +1,5 @@
-I001,B004,Beef,50,Cold Storage A,2026-04-08
+I001,B006,Beef,70,Cold Storage A,2026-04-15
+I002,B007,Chicken,90,Cold Storage B,2026-04-13
+I003,B008,Mutton,20,Freezer Room 1,2026-04-10
+I004,B001,Beef,100,Cold Storage A,2026-04-10
+I1775894120828,B006,Beef,70,Cold Storage B,2026-04-15

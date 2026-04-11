@@ -9,6 +9,7 @@ public class Inventory {
     private int totalQuantity;
     private String storageLocation;
     private LocalDate expiryDate;
+    private String expiryStatus;
 
     public Inventory() {
     }
@@ -21,6 +22,14 @@ public class Inventory {
         this.totalQuantity = totalQuantity;
         this.storageLocation = storageLocation;
         this.expiryDate = expiryDate;
+    }
+
+    public String getExpiryStatus() {
+        return expiryStatus;
+    }
+
+    public void setExpiryStatus(String expiryStatus) {
+        this.expiryStatus = expiryStatus;
     }
 
     public String getInventoryId() {

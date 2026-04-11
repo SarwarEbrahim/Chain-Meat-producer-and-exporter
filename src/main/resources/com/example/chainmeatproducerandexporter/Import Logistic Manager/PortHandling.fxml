@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chainmeatproducerandexporter.PortHandlingController">
+   <children>
+      <TextField fx:id="nameTextField" layoutX="162.0" layoutY="77.0" />
+      <Label layoutX="85.0" layoutY="81.0" text="Port Name" />
+      <TextField fx:id="chargeTextfield" layoutX="162.0" layoutY="161.0" />
+      <Label layoutX="54.0" layoutY="165.0" text="Handling Charge" />
+      <Button layoutX="184.0" layoutY="200.0" mnemonicParsing="false" onAction="#saveportdetailsButton" text="Save Port Details" />
+      <Label layoutX="78.0" layoutY="41.0" text="ShipmentID" />
+      <ComboBox fx:id="shipmentIdComboBox" layoutX="162.0" layoutY="37.0" prefWidth="150.0" />
+      <Label layoutX="99.0" layoutY="120.0" text="Currency" />
+      <ComboBox fx:id="currencyComboBox" layoutX="162.0" layoutY="116.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>

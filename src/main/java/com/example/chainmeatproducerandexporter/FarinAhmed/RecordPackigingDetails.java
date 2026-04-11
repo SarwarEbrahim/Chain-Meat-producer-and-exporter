@@ -1,6 +1,5 @@
-package com.example.chainmeatproducerandexporter;
+package com.example.chainmeatproducerandexporter.FarinAhmed;
 
-import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
 import javafx.scene.control.*;
 
@@ -18,20 +17,18 @@ public class RecordPackigingController
     @javafx.fxml.FXML
     private TextField weightTextField;
 
-    private ArrayList<Packaging> packagingList = new ArrayList<>();
+    private ArrayList<RecordPackigingDetails> packagingList = new ArrayList<>();
 
     @javafx.fxml.FXML
     public void initialize() {
-
         packagingTypeComboBox.getItems().addAll("Box", "Plastic", "Vacuum");
-
         loadFromFile();
     }
 
     @javafx.fxml.FXML
     public void packagingButton(ActionEvent actionEvent) {
 
-        // 1. Validation
+        // 1. Empty validation
         if (packageidTextField.getText().isEmpty() ||
                 unitTextField.getText().isEmpty() ||
                 weightTextField.getText().isEmpty() ||
@@ -46,30 +43,29 @@ public class RecordPackigingController
         }
 
         // 2. Number validation
-        int unit;
+        int units;
         double weight;
 
         try {
-            unit = Integer.parseInt(unitTextField.getText());
+            units = Integer.parseInt(unitTextField.getText());
             weight = Double.parseDouble(weightTextField.getText());
         } catch (NumberFormatException e) {
             Alert alert = new Alert(Alert.AlertType.WARNING);
             alert.setTitle("Warning");
             alert.setHeaderText("Invalid Input");
-            alert.setContentText("Unit and Weight must be numbers");
+            alert.setContentText("Units must be integer and weight must be number");
             alert.showAndWait();
             return;
         }
 
         // 3. Create object
-        Packaging packaging = new Packaging(
-                packageidTextField.getText(),
-                packagingTypeComboBox.getValue(),
-                unit,
-                weight
-        );
+        RecordPackigingDetails details = new RecordPackigingDetails();
+        details.setPackageID(packageidTextField.getText());
+        details.setPackagingType(packagingTypeComboBox.getValue());
+        details.setNumberOfUnits(units);
+        details.setWeightPerUnits(weight);
 
-        packagingList.add(packaging);
+        packagingList.add(details);
 
         // 4. Save file
         saveToFile();
@@ -78,7 +74,7 @@ public class RecordPackigingController
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle("Success");
         alert.setHeaderText("Done");
-        alert.setContentText("Packaging Recorded Successfully!");
+        alert.setContentText("Packaging Details Saved Successfully!");
         alert.showAndWait();
 
         // 6. Clear fields
@@ -92,8 +88,8 @@ public class RecordPackigingController
     private void saveToFile() {
         try (ObjectOutputStream output = new ObjectOutputStream(new FileOutputStream("packaging.bin"))) {
             output.writeInt(packagingList.size());
-            for (Packaging p : packagingList) {
-                output.writeObject(p);
+            for (RecordPackigingDetails r : packagingList) {
+                output.writeObject(r);
             }
         } catch (IOException e) {
             System.out.println("File write error");
@@ -105,12 +101,11 @@ public class RecordPackigingController
         try (ObjectInputStream input = new ObjectInputStream(new FileInputStream("packaging.bin"))) {
             int size = input.readInt();
             for (int i = 0; i < size; i++) {
-                Packaging p = (Packaging) input.readObject();
-                packagingList.add(p);
+                RecordPackigingDetails r = (RecordPackigingDetails) input.readObject();
+                packagingList.add(r);
             }
         } catch (IOException | ClassNotFoundException e) {
             // first run ignore
         }
     }
 }
-

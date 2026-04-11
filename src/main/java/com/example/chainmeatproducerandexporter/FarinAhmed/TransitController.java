@@ -1,3 +1,5 @@
+package com.example.chainmeatproducerandexporter.FarinAhmed;
+
 import java.io.Serializable;
 
 public class Transit implements Serializable {
